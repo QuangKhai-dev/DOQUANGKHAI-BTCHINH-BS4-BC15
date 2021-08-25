@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header  */
+header {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 0 30px 0 30px;
+}
+header nav.navbar {
+    padding-top: 20px;
+}
+header .collapse button {
+    border: 1px solid rgba(255, 255, 255, 0.438) !important;
+    text-decoration: none;
+    border-radius: 35px;
+    margin-left: 40px;
+    width: 170px;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    transition: all 0.5s;
+}
+header .collapse button:hover {
+    background-color: #fd4766 !important;
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+header a.navbar-brand img {
+    height: 60px;
+}
+header li.nav-item {
+    margin-right: 15px;
+}
+header a.nav-link {
+    color: white !important;
+    font-size: 20px;
+}
+header li.nav-item:hover a.nav-link {
+    color: #fd4766 !important;
+}
+
+/* carousel  */
+#carousel div.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+#carousel div.carousel-caption h3 {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+#carousel div.carousel-caption p {
+    font-size: 24px;
+}
+#carousel div.carousel-caption button {
+    height: 65px;
+    width: 200px;
+    border-radius: 25px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+#carousel div.carousel-caption button:hover {
+    border: 2px solid #fd4766;
+    background-color: unset;
+    color: #fd4766 !important;
+}
+#carousel a.carousel-control-prev i{
+    font-size: 25px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    transition: 0.5s;
+}
+#carousel a.carousel-control-prev i:hover{
+    background-color: #fd4766;
+    border: none;
+    transform: translateX(-30px);
+}
+#carousel a.carousel-control-next i{
+    font-size: 25px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    transition: 0.5s;
+}
+#carousel a.carousel-control-next i:hover {
+    background-color: #fd4766;
+    border: none;
+    transform: translateX(30px);
+}
+#carousel ul.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* services  */
+#services .services_title {
+    text-align: center;
+    margin-top: 100px;
+}
+#services .services_title h1 {
+    font-size: 50px;
+}
+#services .services_title h4 {
+    font-size: 20px;
+    background-image:   linear-gradient(#1C99FE,#4718c7,#f82b4d);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#services .services_title p {
+    font-size: 20px;
+    color: rgba(29,29,36,.75);
+    margin-bottom: 80px;
+}
+.services_container .container-item i {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#services .services_container .container-row:last-child {
+    margin-top: 100px;
+}   
+
+/* Project  */
+#project .project_title {
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 200px;
+}
+#project .project_title h4 {
+    font-size: 20px;
+    background-image:   linear-gradient(#1C99FE,#4718c7,#f82b4d);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#project .project_container .container-row:last-child {
+    margin-top: 30px;
+}
+#project .project_container .project-item img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+#project .project_container .project-item .item-text {
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    color: white;
+}
+#project .project_container button {
+    height: 65px;
+    width: 250px;
+    border-radius: 35px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: #fd4766;
+    font-size: 20px;
+}
+#project .project_container button:hover {
+    border: 2px solid #fd4766;
+    background-color: unset;
+    color: #fd4766;
+}
+
+/* about  */
+#about .about_right h2{
+    background-image:   linear-gradient(#1C99FE,#4718c7,#f82b4d);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#about .about_right p {
+    font-size: 18px;
+    color: #627575 ;
+}
+#about .about_container .about_left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+/* new */
+#new .new_title {
+    text-align: center;
+}
+#new .new_container {
+    margin-bottom: 200px;
+}
+#new .new_container {
+    position: relative;
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+#new .new_container .new-item {
+    position: relative;
+}
+#new .new_container .new-text {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    transform: translateY(130px);
+    overflow: hidden;
+    transition: 0.5s;
+}
+#new .new_container .new-text button {
+    border: 1px solid rgba(255, 255, 255, 0.644);
+    background-color: #FD4766;
+}
+#new .new_container .new-text:hover {
+    transform: translateY(0);
+}
+#new .new_container .new-text button:hover {
+    color: white;
+    background-color: red;
+    border: 1px solid rgba(255, 255, 255, 0.644);
+}
+#new .new_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: contrast(80%);
+}
+
+/* clients  */
+#clients .clients_title {
+    text-align: center;
+}
+#clients .clients_list img{
+    width: 150px;
+    object-fit: contain;
+}
+
+/* footer  */
+footer {
+    background-color: black;
+}
+footer .footer_up {
+    justify-content: space-between;
+    border-bottom: 1px solid #343334;
+}
+footer .footer_up h1 {
+    font-size: 35px;
+}
+footer .footer_up button {
+    width: 270px;
+    height: 80px;
+    border-radius: 50px;
+    border: 2px solid #627575b9 !important;
+    transition: 0.5s;
+}
+footer .footer_up button:hover {
+    background-color: #fd4766;
+    border: none;
+}
+footer .footer_down h2 {
+    font-size: 25px;
+}
+footer .footer_down img {
+    width: 150px;
+    margin-bottom: 50px;
+}
+footer .footer_down p {
+    color: #627575;
+}
+footer .footer_down ul {
+    list-style: none;
+}
+footer .footer_down span {
+    color: #627575;
+}
+footer .footer_down ul li a {
+    text-decoration: none;
+    color: #627575;
+}
+footer .footer_down .footer_icon i{
+    font-size: 20px;
+    color: #9496a2;
+}
